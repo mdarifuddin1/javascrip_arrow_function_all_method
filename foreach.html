@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var A = ["Tamim", "Shakib", "Mushfiq","Riyadh", "Arif"]; 
+    document.write(A);
+    document.write("<br><br>");
+
+    A.forEach(function(val){
+        document.write(val + "<br>");
+    });
+    document.write("<br>");
+    // A.forEach(function(val,i){
+    //     document.write(i + ":", val + "<br>");
+    // });
+    document.write("<br>");
+
+    // Using Array functions 
+    A.forEach(val=>document.write(val + "<br>"));
+    document.write("<br>");
+    A.forEach((val,i)=>document.write(i + "::", val + "<br>"));
+
+    document.write("<br>");
+    
+    const B = []; // New Array
+
+   for (let i = 0; i < A.length; i++) {
+    B.push(A[i]);
+    document.write(A[i] + "<br>");
+   }
+   document.write("<br>");
+    A.forEach((val) => {
+    B.push(val);
+    document.write(val +"<br>");
+    });
+
+    document.write("<br>");
+
+    A.shift();
+    document.write(A);
+
+    document.write("<br>");
+
+    A.pop();
+    document.write(A);
+
+    document.write("<br>");
+
+    A.push("Riyadh",);
+    document.write(A);
+
+    document.write("<br>");
+
+    A.unshift("Mashrafi", "Tamim");
+    document.write(A);
+
+    document.write("<br><br>");
+
+    A.splice(3, 0, "Liton Daas");
+    document.write(A);
+
+    document.write("<br><br>");
+
+    A.splice(3,2);            // Delete 2 elements from 3rd Pos
+    document.write(A);
+
+    document.write("<br>");
+
+</script>
+</body>
+</html>
+
